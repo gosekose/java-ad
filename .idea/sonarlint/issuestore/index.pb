@@ -110,3 +110,9 @@ W
 ,src/thread/control/CheckedExceptionMain.java,0/e/0e2745821bc06cff9124daf1cd681a637279f95a
 I
 src/util/ThreadUtils.java,5/f/5f6bb2e328c6a2f7edc28594a7da603b85ed2e39
+W
+'src/thread/control/join/JoinMainV0.java,8/e/8e49ba44ced61265c29d3d08e240610ed52c1f7a
+W
+'src/thread/control/join/JoinMainV1.java,b/4/b43acc91ce06d4a68585a770bf57937d7577d7f6
+W
+'src/thread/control/join/JoinMainV2.java,9/1/913c8093eb208915ed3ea0bed5c9694bb6145daa
