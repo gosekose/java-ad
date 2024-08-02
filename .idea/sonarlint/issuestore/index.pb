@@ -116,3 +116,5 @@ W
 'src/thread/control/join/JoinMainV1.java,b/4/b43acc91ce06d4a68585a770bf57937d7577d7f6
 W
 'src/thread/control/join/JoinMainV2.java,9/1/913c8093eb208915ed3ea0bed5c9694bb6145daa
+b
+2src/thread/control/interrupt/ThreadStopMainV1.java,2/8/28096295ff444a9ad89011caaa3efde5890b0065
