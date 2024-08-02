@@ -1,16 +1,12 @@
 
 =
 src/Main.java,9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138
-D
-src/HelloThread.java,0/3/03ed96da2aefa835f52b01ee48f0d0fb63050a83
 Q
 !src/thread/start/HelloThread.java,1/9/1942f512a36848deaa00a5694f2f4a106e14ae84
 S
 #src/thread/start/BadThreadMain.java,2/3/231ed03fcbc24162fa7730841bedfe6839d2f2ac
 U
 %src/thread/start/DaemonTheadMain.java,d/a/da97e0c6cb286dc199ca02176dcae038b06e7421
-R
-"src/thread/start/DaemonThread.java,2/f/2f7e4fa31adf992f0d9f2ff208ad4e5a8d1dc128
 Å
 Q.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138,b/0/b08f1ab659fbdd998f45c0def99188f980cc899b
 Å
@@ -114,7 +110,13 @@ W
 'src/thread/control/join/JoinMainV0.java,8/e/8e49ba44ced61265c29d3d08e240610ed52c1f7a
 W
 'src/thread/control/join/JoinMainV1.java,b/4/b43acc91ce06d4a68585a770bf57937d7577d7f6
-W
-'src/thread/control/join/JoinMainV2.java,9/1/913c8093eb208915ed3ea0bed5c9694bb6145daa
 b
 2src/thread/control/interrupt/ThreadStopMainV1.java,2/8/28096295ff444a9ad89011caaa3efde5890b0065
+b
+2src/thread/control/interrupt/ThreadStopMainV2.java,3/4/348fc51770592bda24b2c3e473e997fe88cf3c31
+b
+2src/thread/control/interrupt/ThreadStopMainV3.java,3/4/3460dcb111404eb7166cd93a6cb692f938eff590
+[
++src/thread/control/printer/MyPrinterV1.java,d/d/dd2a6bce50c76d73c47f744df9b930cd201b95ca
+[
++src/thread/control/printer/MyPrinterV2.java,6/0/60529e84101de24a97f879f3077d224e82f25193

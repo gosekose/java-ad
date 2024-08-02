@@ -1,12 +1,9 @@
 package thread.control.interrupt;
 
-import util.MyLogger;
-import util.ThreadUtils;
+import static util.MyLogger.log;
+import static util.ThreadUtils.sleep;
 
-import static util.MyLogger.*;
-import static util.ThreadUtils.*;
-
-public class ThreadStopMainV1 {
+public class ThreadStopMainV3 {
 
     public static void main(String[] args) {
         MyTask task = new MyTask();
@@ -23,17 +20,24 @@ public class ThreadStopMainV1 {
         @Override
         public void run() {
             try {
-                while (true) {
+                while (!Thread.interrupted()) {
                     log("작업 중");
                     Thread.sleep(50);
                 }
             } catch (InterruptedException e) {
-                log("work 스레드 인터럽트 상태2 = " + Thread.currentThread().isInterrupted());
+                log("state = " + Thread.currentThread().getState());
+            }
+
+            try {
+                log("자원 정리");
+                Thread.sleep(1000);
+                log("work 스레드 인터럽트 상태3 = " + Thread.currentThread().isInterrupted());
+                log("자원 정리 종료");
+            } catch (InterruptedException e) {
+                log("work 스레드 인터럽트 상태3 = " + Thread.currentThread().isInterrupted());
                 log("interrupted message = " + e.getMessage());
                 log("state = " + Thread.currentThread().getState());
             }
-            log("자원 정리");
-            log("작업 종료");
         }
     }
 }

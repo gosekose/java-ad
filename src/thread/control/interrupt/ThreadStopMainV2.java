@@ -1,12 +1,9 @@
 package thread.control.interrupt;
 
-import util.MyLogger;
-import util.ThreadUtils;
+import static util.MyLogger.log;
+import static util.ThreadUtils.sleep;
 
-import static util.MyLogger.*;
-import static util.ThreadUtils.*;
-
-public class ThreadStopMainV1 {
+public class ThreadStopMainV2 {
 
     public static void main(String[] args) {
         MyTask task = new MyTask();
@@ -23,7 +20,7 @@ public class ThreadStopMainV1 {
         @Override
         public void run() {
             try {
-                while (true) {
+                while (!Thread.currentThread().isInterrupted()) {
                     log("작업 중");
                     Thread.sleep(50);
                 }
