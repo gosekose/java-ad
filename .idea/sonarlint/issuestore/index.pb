@@ -13,8 +13,6 @@ Q.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b3681
 Q.idea/sonarlint/securityhotspotstore/2/3/231ed03fcbc24162fa7730841bedfe6839d2f2ac,8/4/844d2c712eeab44fe036cf88ec6785c875dbd5a3
 =
 java-adv1.iml,e/c/ec7a881193f1962f84900fd87634057ce47a3a92
-Å
-Q.idea/sonarlint/securityhotspotstore/0/3/03ed96da2aefa835f52b01ee48f0d0fb63050a83,0/5/053c1fa950ea80279c339c14c319491a123383d8
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 Å
@@ -28,8 +26,6 @@ w
 G.idea/sonarlint/issuestore/1/9/1942f512a36848deaa00a5694f2f4a106e14ae84,c/8/c8ee9d59583ef791c622d28cc63c4f93cdda0d87
 Å
 Q.idea/sonarlint/securityhotspotstore/d/a/da97e0c6cb286dc199ca02176dcae038b06e7421,e/a/ea20aaaf7ff21cd92a3e2b389cbc83c15ac8ceae
-Å
-Q.idea/sonarlint/securityhotspotstore/2/f/2f7e4fa31adf992f0d9f2ff208ad4e5a8d1dc128,c/3/c3234b7a5b30d09b63b260659a043e6b9a9a8c76
 S
 #src/thread/start/HelloRunnable.java,1/2/12e55600a4c4a9650056893b3fda506f81b4559b
 \
@@ -120,3 +116,11 @@ b
 +src/thread/control/printer/MyPrinterV1.java,d/d/dd2a6bce50c76d73c47f744df9b930cd201b95ca
 [
 +src/thread/control/printer/MyPrinterV2.java,6/0/60529e84101de24a97f879f3077d224e82f25193
+W
+'src/thread/control/yield/YieldMain.java,9/8/9834d64026a316a8a77bfeb06a6ebcc11783d74c
+[
++src/thread/control/yield/YieldMain„Öç2.java,6/8/6853699de6b6a539fec68b1521b5f2b4778e5dab
+Y
+)src/thread/control/yield/YieldMainV2.java,b/1/b15919886a26e9a07c5a24c942c17744b887c5e3
+[
++src/thread/control/printer/MyPrinterV3.java,8/4/84ad1a06eaeae0334bba6c0df0c9cf80e06db922
