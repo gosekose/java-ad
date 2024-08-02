@@ -102,3 +102,11 @@ w
 G.idea/sonarlint/issuestore/d/3/d3fd52f9ef2a6a9ee8b1b4203ac9f4287fda294d,a/9/a92a90459ba882e3fd7b4464d1961537fa5b0481
 Å
 Q.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,3/0/30205a209c6ce77c4cfc19a09e6f57c588b7fb88
+V
+&src/thread/control/ThreadInfoMain.java,a/6/a6fe222125c9a1836a08b53db17546f8bdfe08fd
+W
+'src/thread/control/ThreadStateMain.java,b/8/b8f60505cb894cfe483efeb4324370083bf92d49
+\
+,src/thread/control/CheckedExceptionMain.java,0/e/0e2745821bc06cff9124daf1cd681a637279f95a
+I
+src/util/ThreadUtils.java,5/f/5f6bb2e328c6a2f7edc28594a7da603b85ed2e39
