@@ -1,13 +1,18 @@
 package thread.sync;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
-public class BankAccountV3 implements BankAccount {
+public class BankAccountV4 implements BankAccount {
 
     private int balance;
 
-    public BankAccountV3(int initialBalance) {
+    private final Lock lock = new ReentrantLock();
+
+    public BankAccountV4(int initialBalance) {
         this.balance = initialBalance;
     }
 
@@ -16,7 +21,9 @@ public class BankAccountV3 implements BankAccount {
         log("거래 시작: " + getClass().getSimpleName());
         // 잔고가 출금액보다 적으면 진행하면 안됨
 
-        synchronized (this) {
+        lock.lock();
+
+        try {
             // 임계 영역 시작
             log("[검증 시작] 출금액: " + amount + ", 잔액: " + balance);
             if (balance < amount) {
@@ -30,6 +37,8 @@ public class BankAccountV3 implements BankAccount {
             balance = balance - amount;
             log("[출금 완료] 출금액: " + amount + ", 잔액: " + balance);
             // 임계 영역 완료
+        } finally {
+            lock.unlock();
         }
 
         log("거래 종료: " + getClass().getSimpleName());
@@ -37,7 +46,12 @@ public class BankAccountV3 implements BankAccount {
     }
 
     @Override
-    public synchronized int getBalance() {
-        return balance;
+    public int getBalance() {
+        lock.lock();
+        try {
+            return balance;
+        } finally {
+            lock.unlock();
+        }
     }
 }
