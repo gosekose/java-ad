@@ -21,8 +21,8 @@ public class RunnableTask implements Runnable {
 
     @Override
     public void run() {
-        log("시작");
+        log("[" + name + "] 시작");
         sleep(sleeps);
-        log("종료");
+        log("[" + name + "] 종료");
     }
 }
