@@ -19,4 +19,16 @@ public class ExecutorUtils {
             log("Not a ThreadPoolExecutor");
         }
     }
+
+    public static void printState(ExecutorService executorService, String taskName) {
+        if (executorService instanceof ThreadPoolExecutor poolExecutor) {
+            int pool = poolExecutor.getPoolSize();
+            int active = poolExecutor.getActiveCount();
+            int queued = poolExecutor.getQueue().size();
+            long completedTask = poolExecutor.getCompletedTaskCount();
+            log(taskName + " [pool = " + pool + ", active = " + active + ", queued = " + queued + ", completedTask = " + completedTask + "]");
+        } else {
+            log("Not a ThreadPoolExecutor");
+        }
+    }
 }
