@@ -16,5 +16,13 @@ public class TestString {
         }
 
         System.out.println("count = " + count);
+
+        int value = 78;
+
+        Integer boxedValue = Integer.valueOf(value);
+        System.out.println("boxedValue = " + boxedValue);
+
+        Integer boxedValue2 = value;
+        System.out.println("boxedValue2 = " + boxedValue2);
     }
 }
