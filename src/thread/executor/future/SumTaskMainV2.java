@@ -25,7 +25,7 @@ public class SumTaskMainV2 {
         }
     }
 
-    static class SumTask implements Callable<Integer> {
+    public static class SumTask implements Callable<Integer> {
         int startValue;
         int endValue;
 
